@@ -6,9 +6,9 @@ namespace rut::cip::figure
 	class Triangle
 	{
 	public:
-		Triangle(Point& point1,
-			Point& point2,
-			Point& point3);
+		Triangle(const Point& point1,
+			const Point& point2,
+			const Point& point3);
 
 		double GetPerimeter() const;
 		double GetArea() const;
