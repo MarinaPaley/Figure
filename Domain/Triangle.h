@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 #include "Point.h"
 
 namespace rut::cip::figure
@@ -15,6 +16,7 @@ namespace rut::cip::figure
 		double GetSide1() const;
 		double GetSide2() const;
 		double GetSide3() const;
+		std::string ToString() const;
 
 	private:
 		Point point1;

@@ -1,18 +1,18 @@
-#pragma once
+п»ї#pragma once
 namespace rut::cip::figure 
 {
 	/**
-	* @brief Класс Точка.
+	* @brief РљР»Р°СЃСЃ РўРѕС‡РєР°.
 	*/
 	struct Point
 	{
 		/**
-	    * @brief Абсцисса.
+	    * @brief РђР±СЃС†РёСЃСЃР°.
 	    */
 		double x;
 
 		/**
-		* @brief Ордината.
+		* @brief РћСЂРґРёРЅР°С‚Р°.
 		*/
 		double y;
 	};

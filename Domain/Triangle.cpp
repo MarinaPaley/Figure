@@ -1,3 +1,4 @@
+﻿#include <sstream>
 #include "Triangle.h"
 
 rut::cip::figure::Triangle::Triangle(
@@ -22,4 +23,14 @@ double rut::cip::figure::Triangle::GetSide2() const
 double rut::cip::figure::Triangle::GetSide3() const
 {
 	return this->side3;
+}
+
+std::string rut::cip::figure::Triangle::ToString() const
+{
+	std::stringstream buffer{};
+	buffer << "Первая сторона " << this->side1 <<
+		" Вторая сторона " << this->side2 <<
+		" Стороны сторона " << this->side3;
+
+	return buffer.str();
 }
