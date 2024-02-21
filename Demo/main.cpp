@@ -11,10 +11,10 @@ int main()
 {
 	setlocale(LC_ALL, "RU");
 
-	Point point1{};
-	point1.x = GetCoordinate("Введите x = ");
-	point1.y = GetCoordinate("Введите y = ");
-	
+	auto x = GetCoordinate("Введите x = ");
+	auto y = GetCoordinate("Введите y = ");
+	Point point1{x, y};
+
 	Point point2{};
 	point2.x = GetCoordinate("Введите x = ");
 	point2.y = GetCoordinate("Введите y = ");
@@ -25,6 +25,8 @@ int main()
 
 	Triangle triangle{ point1, point2, point3 };
 	std::cout << triangle.ToString() << "\n";
+
+	auto area = triangle.GetArea();
 
 	return 0;
 }

@@ -7,7 +7,11 @@ rut::cip::figure::Triangle::Triangle(
 	const Point& point3)
 	: point1{point1}, point2{point2}, point3{point3}
 {
-	
+	if (point1 == point2 || point2 == point3
+		|| point1 == point3)
+	{
+		throw std::logic_error("Can't be triangle");
+	}
 }
 
 double rut::cip::figure::Triangle::GetSide1() const

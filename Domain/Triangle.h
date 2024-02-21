@@ -7,6 +7,10 @@ namespace rut::cip::figure
 	class Triangle
 	{
 	public:
+		/**
+		* @brief Инициализирует обект типа "Triangle"
+		* @point1 - Точка 9первая)
+		*/
 		Triangle(const Point& point1,
 			const Point& point2,
 			const Point& point3);
