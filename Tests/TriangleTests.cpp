@@ -2,7 +2,7 @@
 #include "CppUnitTest.h"
 #include "..\Domain\Point.h"
 #include "..\Domain\Triangle.h"
-#include <limits>
+
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
