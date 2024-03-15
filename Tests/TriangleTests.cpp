@@ -21,7 +21,7 @@ namespace Tests
 			Point point3{ 1, 1 };
 			// Act & Assert
 			Assert::ExpectException<std::logic_error>(
-				[point1, point2, point3]()
+				[&point1, &point2, &point3]()
 				{ auto x = new Triangle { point1, point2, point3 }; });
 		}
 	};
