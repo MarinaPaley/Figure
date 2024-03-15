@@ -26,7 +26,7 @@ int main()
 	Triangle triangle{ point1, point2, point3 };
 	std::cout << triangle.ToString() << "\n";
 
-	auto area = triangle.GetArea();
+	//auto area = triangle.GetArea();
 
 	return 0;
 }
